@@ -1,25 +1,11 @@
 {
   "name": "teachingbusiness",
-  "version": "1.0.0",
   "private": true,
-  "description": "teachingbusiness",
-  "author": "midhubalan",
-  "keywords": [
-    "gatsby"
+  "workspaces": [
+    "site"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "gatsby": "^5.7.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "gatsby-plugin-netlify": "^5.1.0"
+    "develop": "yarn workspace site develop",
+    "build": "yarn workspace site build"
   }
 }
